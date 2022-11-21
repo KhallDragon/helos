@@ -1,0 +1,13 @@
+/*RESONSIVE*/
+
+$breakpoint: (
+    celu: 576px,
+    tablet: 768px,
+    pc: 1024px
+);
+
+@mixin responsive($dispositivo){
+    @media screen and (min-width: map-get($breakpoint, $dispositivo)){
+        @content;
+    }
+}
