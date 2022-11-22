@@ -1,0 +1,41 @@
+.servicios{    
+    background-color: $color3;      
+    &__seccion  { 
+        padding: $m $l;        
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    &__img{
+        display: flex;
+        justify-content: end;
+        img{
+            height: 15vw;            
+        }
+    }
+    &__frase{
+        margin-left: $l;
+    }
+}
+
+.marcas{
+    background-color: $color1;
+    &__titulo{
+        color:$color3;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    &__todas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        img{
+            width: 25vw;
+        }
+    }
+} 
